@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Mo_HTML_CSS_PRAC/cs502020"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "my_handlebars_prac"
+    }
+}
