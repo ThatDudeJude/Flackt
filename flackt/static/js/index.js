@@ -28,16 +28,6 @@ function addEventHandlers() {
     
     
 
-    console.log('navMuenuContainer', navMenuContainer)
-
-    // let toggleSVG = d3.select('#toggle-svg')
-    // toggleSVG.attr('width', 80)
-    //         .attr('height', 80)
-
-    // toggleSVG.append('path')
-    //         .attr('d', 'M 0 20 L 27 40 L 0 60 L 0 20')
-    //         .attr('stroke-linejoin', 'round')
-    //         .style('fill', 'white')
     
     function navMenuResponse() {
         let classList = navHamburger.classList
@@ -144,12 +134,12 @@ function addEventHandlers() {
     }
 
     joinChannelButton.onclick = () => {
-        console.log('Joining Channel')
+    
         joinExistingChannel()
         
     }
     createChannelButton.onclick = () => {
-        console.log('Creating Channel')
+    
         createNewChannelExistingUser()
     }
     

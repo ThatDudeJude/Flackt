@@ -9,7 +9,7 @@ class displayModal {
     }
     
     createModal() {        
-        console.log('Creating modal')
+  
         let modalWrapper = document.querySelector(".modal")
         modalWrapper.innerHTML = this.modal(this.context)
         
@@ -67,7 +67,7 @@ class displayChannel {
             ...this.context,
             ...this.channelContext
         }              
-        console.log('newContext', this.context, 'currentChannel', this.channelContext)
+  
         let siteContainer = Handlebars.templates.siteContainer(newContext)
         let container = document.querySelector('.site-container')        
         container.innerHTML = siteContainer

@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // localStorage.clear()
     if (!localStorage.getItem('displayName')) {        
 
-        console.log('getDisplayName')
+
         getChannelsList().then(context => {                    
-            console.log('getChannelsList')
+
             let mainContainer = Handlebars.templates.siteContainer(context)
-            console.log("context allChannels", context)
+
             let container = document.querySelector('.site-container')
             container.innerHTML = mainContainer
             let newUserContext = {pickChannelFromList: Handlebars.templates.joinChannelModal({channelsList: context['channelsData']}), 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let title = "Flackt | Display Name"
             document.title = title
             history.pushState(null, title, `/access/user`)
-            console.log("channelsList",context['channelsList'])
+
             newUserModal.createModal()                    
             document.querySelector('#getDisplayName').onsubmit = () => {
                 getDisplayName(newUserModal)
@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function getChannelsList(type='all') {
     let context = {}        
-    console.log('getList type', type)
+
     let data = await getData(`/chan/list/${type}`)        
     let allChannels = data.allChannels
-    console.log('All channels', allChannels)            
+
     return new Promise(resolve => {
         
         const channelNames = Object.keys(allChannels)
@@ -69,12 +69,12 @@ async function getChannelsList(type='all') {
                     dataList.push(allChannels[name])
                 })
                 context['channelsData'] = dataList;
-                console.log(context)
+
             } else {
                 context['channelsData'] = 0
             }            
             resolve(context)
-            console.log('resolved')
+
         }                 
     )
 
@@ -88,7 +88,7 @@ function getData(url, formData = undefined, method="POST") {
         request.onload = () => {
             try {
                 const data = JSON.parse(request.responseText)
-                console.log("Data", data)
+
                 if (data.success) {
                     resolve(data)    
                 }
@@ -110,7 +110,7 @@ async function resumeChannelDisplay(displayName, channelName) {
     if (data.success) {
         await selectChannel(channelName)
     } else {
-        console.log(data['message'])
+
     }
     
 }
@@ -157,7 +157,7 @@ function createNewChannel(modal) {
                 const data = JSON.parse(request.responseText)
                 if (data.success == false) {                        
                     modal.showMessage(data.message, scrollPage - 1);
-                    console.log("Message:", data.message)
+
                 } else {
                     let context = await getChannelsList('member')
                     modal.clear()
@@ -188,7 +188,7 @@ function joinChannel(modal) {
 
     channelDescriptionToggleButtons.forEach((button, i) => {
         button.onclick = () => {
-            console.log('Show Description')
+
             descriptionText[i].classList.toggle('show-description')
             let caret = document.querySelectorAll('.description-btn .fas')[i]
             let caretOrientation = caret.className
@@ -222,16 +222,16 @@ function joinChannel(modal) {
 }
 
 async function selectChannel(channelName) {
-    console.log('selecting channel')
+
     let currentChannelData = await getData(`/chan/show/${channelName}`)
-    console.log('selected channel data', currentChannelData)
+
     if (currentChannelData.success) {
         let context = await getChannelsList('member')
-        console.log("CurrentChannelData", currentChannelData)
+
         let currentChannel = new displayChannel(currentChannelData.channelData, context)        
         currentChannel.updateChannelDisplay()
     } else {
-        console.log(currentChannelData.message)
+
     }
 }
 

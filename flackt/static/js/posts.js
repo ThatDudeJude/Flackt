@@ -12,7 +12,7 @@ let scrollHeight;
 let isLoading = false
 
 function getChannelContent(previousChannelName, currentChannelName, counter = 1, quantity = 10) {
-    console.log('previousCHan', previousChannelName, 'currentChan', currentChannelName)
+    
     let mainContainer;
     let textBox;
     let oldHeight, newHeight;
@@ -25,13 +25,13 @@ function getChannelContent(previousChannelName, currentChannelName, counter = 1,
     textBox = document.querySelector('.text-container')
     loadPosts(currentChannelName).then(boolValue => {
         mainContainer.scrollTo(0, 10000)
-        console.log('boolValue', boolValue)
+    
         if (boolValue) {
-            console.log('boolValue', boolValue)
+    
             oldHeight = textBox.scrollHeight
             mainContainer.style.scrollBehavior = 'auto'
             mainContainer.addEventListener('scroll', loadMorePosts)
-            console.log("counter", counter)
+    
 
             if (!socket && !isLiveSocket) {
                 socket = io.connect(location.protocol + "//" + document.domain + ":" + location.port)
@@ -51,7 +51,7 @@ function getChannelContent(previousChannelName, currentChannelName, counter = 1,
                     if (text.name == "Joined") {
                         let nameJoining = /[\w]+/.exec(text['text'])[0]
 
-                        console.log('nameJoining', nameJoining, 'add to member list')
+    
                         let currentUser = localStorage.getItem('displayName')
                         if (nameJoining != currentUser) {
                             let li = document.createElement('li')
@@ -68,20 +68,20 @@ function getChannelContent(previousChannelName, currentChannelName, counter = 1,
                 })
                 isLiveSocket.on('Joined Room', (data) => {                    
                     setTimeout(() => {
-                        console.log('Is live socket joined room', data.memberName)
+    
                         if (data.isLive) {
-                            console.log('Joined room')                                       
+    
                             
                             let members = document.querySelector('.members-info').children
                             let memberName = data.memberName
                             Array.from(members).forEach(member => {
                                 let text = member.innerHTML
                                 if (text.includes(memberName)) {
-                                    console.log('update member', text)
+    
                                     let live = liveNotification()
                                     member.append(live)
                                 } else {
-                                    console.log('members in room', text)
+    
                                 }
                             })
                         } 
@@ -89,7 +89,7 @@ function getChannelContent(previousChannelName, currentChannelName, counter = 1,
                 })
 
                 isLiveSocket.on('Update Live', (data) => {
-                    console.log('Update live socket joined room', data.liveMembers)
+    
                     let membersInfo = document.querySelector('.members-info')
                     let members = membersInfo.children
                     let liveMembers = data.liveMembers
@@ -124,21 +124,21 @@ function getChannelContent(previousChannelName, currentChannelName, counter = 1,
     })
 
     function connectWebSocket(previousChannel, currentChannel) {        
-        console.log('leaving', previousChannel, 'joining', currentChannel)
+    
         socket.emit('leave', previousChannel)
         socket.emit('join', currentChannel)
         isLiveSocket.emit('leave', previousChannel)              
         isLiveSocket.emit('join', currentChannel)                                                                                                        
-        console.log('Adding socket handlers')
+    
         let name = localStorage.getItem('displayName')
         let textForm = document.querySelector('#text-form')
         textForm.onsubmit = (e) => {
             e.preventDefault()
             let textInput = document.querySelector('#textbox')
-            console.log('Submitting text', textInput)
+    
             let text = textInput.innerHTML
             if (/\w+|\d+/g.test(text)) {
-                console.log('text', text)
+    
                 let textInfo = {
                     name,
                     text
@@ -157,23 +157,23 @@ function getChannelContent(previousChannelName, currentChannelName, counter = 1,
         let end = start + quantity - 1
         counter = end + 1
 
-        console.log('loadPOsts counter', counter)
+    
         let formData = new FormData()
         formData.append("start", start)
         formData.append("end", end)
 
         let data = await getData(`/chan/posts/${currentChannelName}`, formData)
-        console.log('data texts', data.texts)
+    
         if (data.success && data.texts.length > 0) {
             let texts = data.texts
-            console.log('adding previous texts')
+    
             addPreviousTexts(texts, counter, quantity)
             addSVGS()
             if (start == 1 && data.texts.length !== 0) {
                 return true
             } else if (data.texts.length < quantity) {
                 counter = undefined
-                console.log('Few texts')
+    
                 // setTimeout(() => {
                 //     loadingMessage.innerHTML = "No Previous Messages"
                 // }, 3000)
@@ -181,7 +181,7 @@ function getChannelContent(previousChannelName, currentChannelName, counter = 1,
             }
         } else {
             counter = undefined
-            console.log('No mo texts')
+    
             setTimeout(() => {
                 loadingMessage.innerHTML = "No Previous Messages"
             }, 3000)
