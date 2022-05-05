@@ -71,62 +71,62 @@ class Text():
         return {"name": self.name, "text_time": self.text_time, "text": self.text}
 
 
-texts = [{"name": "Chrome", "date": "18:00 1 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."},
-        {"name": "Chrome", "date": "18:00 2 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
-        {"name": "Firefox", "date": "18:00 3 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
-        {"name": "Chrome", "date": "18:00 4 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
-        {"name": "Firefox", "date": "18:00 5 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."},
-        {"name": "Firefox", "date": "18:00 6 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."},
-        {"name": "Chrome", "date": "18:00 7 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."},
-        {"name": "Chrome", "date": "18:00 8 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
-        {"name": "Firefox", "date": "18:00 9 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
-        {"name": "Chrome", "date": "18:00 10 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}
-        ]
+# texts = [{"name": "Chrome", "date": "18:00 1 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."},
+#         {"name": "Chrome", "date": "18:00 2 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
+#         {"name": "Firefox", "date": "18:00 3 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
+#         {"name": "Chrome", "date": "18:00 4 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
+#         {"name": "Firefox", "date": "18:00 5 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."},
+#         {"name": "Firefox", "date": "18:00 6 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."},
+#         {"name": "Chrome", "date": "18:00 7 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."},
+#         {"name": "Chrome", "date": "18:00 8 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
+#         {"name": "Firefox", "date": "18:00 9 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}, 
+#         {"name": "Chrome", "date": "18:00 10 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}
+#         ]
 
-firstChannel = ChannelData('First Channel', 'Being First', "How this became the first channel", 'First')
-firstChannel.add_member('First')
-firstChannel.add_member('Second')
-firstChannel.add_member('Third')
+# firstChannel = ChannelData('First Channel', 'Being First', "How this became the first channel", 'First')
+# firstChannel.add_member('First')
+# firstChannel.add_member('Second')
+# firstChannel.add_member('Third')
 
-secondChannel = ChannelData('Second Channel', 'Being Second', "Runner's up ain't so bad", 'Second')
-secondChannel.add_member('First')
-secondChannel.add_member('Second')
-secondChannel.add_member('Third')
+# secondChannel = ChannelData('Second Channel', 'Being Second', "Runner's up ain't so bad", 'Second')
+# secondChannel.add_member('First')
+# secondChannel.add_member('Second')
+# secondChannel.add_member('Third')
 
-thirdChannel = ChannelData('Third Channel', 'Being Third', "Being first after second", 'Third')
-thirdChannel.add_member('First')
-thirdChannel.add_member('Fourth')
-thirdChannel.add_member('Third')
+# thirdChannel = ChannelData('Third Channel', 'Being Third', "Being first after second", 'Third')
+# thirdChannel.add_member('First')
+# thirdChannel.add_member('Fourth')
+# thirdChannel.add_member('Third')
 
-fourthChannel = ChannelData('Fourth Channel', 'Being Fourth', "Closest to third", 'Fourth')
-fourthChannel.add_member('First')
-fourthChannel.add_member('Second')
-fourthChannel.add_member('Third')
-fourthChannel.add_member('Fourth')
+# fourthChannel = ChannelData('Fourth Channel', 'Being Fourth', "Closest to third", 'Fourth')
+# fourthChannel.add_member('First')
+# fourthChannel.add_member('Second')
+# fourthChannel.add_member('Third')
+# fourthChannel.add_member('Fourth')
 
-fourthChannelText = Text("Joined", "Fourth Created this channel")
-fourthChannel.add_text(fourthChannelText)
-secondChannelText = Text("Joined", "Second Created this channel")
-secondChannel.add_text(secondChannelText)
-firstChannelText = Text("Joined", "First Created this channel")
-firstChannel.add_text(firstChannelText)
-thirdChannelText = Text("Joined", "Third Created this channel")
-thirdChannel.add_text(thirdChannelText)
-
-
-for text in texts:
-    fourthChannelText = Text(text["name"], text['text'])
-    fourthChannel.add_text(fourthChannelText)
-    secondChannelText = Text(text["name"], text['text'])
-    secondChannel.add_text(secondChannelText)
+# fourthChannelText = Text("Joined", "Fourth Created this channel")
+# fourthChannel.add_text(fourthChannelText)
+# secondChannelText = Text("Joined", "Second Created this channel")
+# secondChannel.add_text(secondChannelText)
+# firstChannelText = Text("Joined", "First Created this channel")
+# firstChannel.add_text(firstChannelText)
+# thirdChannelText = Text("Joined", "Third Created this channel")
+# thirdChannel.add_text(thirdChannelText)
 
 
-all_channels_info = {"First Channel": firstChannel.get_channel_info(),
-        "Second Channel": secondChannel.get_channel_info(), 
-        "Third Channel": thirdChannel.get_channel_info(),
-        "Fourth Channel": fourthChannel.get_channel_info()}
+# for text in texts:
+#     fourthChannelText = Text(text["name"], text['text'])
+#     fourthChannel.add_text(fourthChannelText)
+#     secondChannelText = Text(text["name"], text['text'])
+#     secondChannel.add_text(secondChannelText)
 
-channels = {"First Channel": firstChannel,
-        "Second Channel": secondChannel, 
-        "Third Channel": thirdChannel,
-        "Fourth Channel": fourthChannel}        
+
+# all_channels_info = {"First Channel": firstChannel.get_channel_info(),
+#         "Second Channel": secondChannel.get_channel_info(), 
+#         "Third Channel": thirdChannel.get_channel_info(),
+#         "Fourth Channel": fourthChannel.get_channel_info()}
+
+# channels = {"First Channel": firstChannel,
+#         "Second Channel": secondChannel, 
+#         "Third Channel": thirdChannel,
+#         "Fourth Channel": fourthChannel}        
