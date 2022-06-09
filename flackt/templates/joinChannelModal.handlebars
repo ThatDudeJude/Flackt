@@ -1,45 +1,55 @@
-<div id="channel-list-container">    
-            <h1 class="form-heading h-4 fs-1 p-2">All Channels</h1>
-            <div class="channel-list-viewport">
-                {{#if channelsList}}                     
-                        {{#each channelsList}}
-                            <div class="channel-list-item">
-                                <div class="chan-item-header">
-                                    <div class="chan-avatar"></div>
-                                    <div class="chan-name-and-topic">
-                                        <p class="chan-name">
-                                            <h1 class="h-4 fs-1">{{channelName}}</h1>
-                                        </p>                                        
-                                        <p class="chan-topic">
-                                            <b>Topic:</b> {{channelTopic}}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="chan-item-descr">
-                                    <button class="btn-secondary description-btn">More <i class="fas fa-caret-down    "></i></button>
-                                    <div class="chan-descr">
-                                        
-                                        <p class="p-1 description">
-                                            <b>Description:</b>
-                                            {{channelDescription}}</p>
-                                        <div class="join-member-total">
-                                            <div class="total-members">
-                                                <b>Total Members:</b> {{totalMembers}}
-                                            </div>
-                                            <div class="join">
-                                                <button class="join-channel-btn btn-secondary" data-channel="{{channelName}}">Join</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        {{/each}}
-                    
-                {{else}}
-                <p class="no-channels">
-                    No Channels Available Yet
-                </p>
-                {{/if}}
+<div id='channel-list-container'>
+  <h1 class='form-heading h-4 fs-1 p-3'><i
+      class='fas fa-arrow-left previous-modal-from-join'
+    ></i>
+    All Channels
+    <i class='fas fa-arrow-right next-modal-from-join'></i></h1>
+  <div class='channel-list-viewport'>
+    {{#if channelsList}}
+      {{#each channelsList}}
+        <div class='channel-list-item'>
+          <div class='chan-item-header'>
+            <div class='chan-avatar'></div>
+            <div class='chan-name-and-topic'>
+              <p class='chan-name'>
+                <h1 class='h-4 fs-1'>{{channelName}}</h1>
+              </p>
+              <p class='chan-topic'>
+                <b>Topic:</b>
+                {{channelTopic}}
+              </p>
             </div>
+          </div>
+          <div class='chan-item-descr'>
+            <button class='btn-secondary description-btn'>More
+              <i class='fas fa-caret-down'></i></button>
+            <div class='chan-descr'>
+
+              <p class='p-1 description'>
+                <b>Description:</b>
+                {{channelDescription}}</p>
+              <div class='join-member-total'>
+                <div class='total-members'>
+                  <b>Total Members:</b>
+                  {{totalMembers}}
+                </div>
+                <div class='join'>
+                  <button
+                    class='join-channel-btn btn-secondary'
+                    data-channel='{{channelName}}'
+                  >Join</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+      {{/each}}
+
+    {{else}}
+      <p class='no-channels'>
+        No Channels Available Yet
+      </p>
+    {{/if}}
+  </div>
+</div>

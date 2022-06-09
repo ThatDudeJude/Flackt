@@ -1,13 +1,6 @@
 from datetime import date
 from datetime import datetime
 
-
-users = {}
-all_channels_info = {}
-channels = {}
-
-
-
 class ChannelData() :
     
     def __init__(self, channel_name, channel_topic, channel_description, channel_creator):
@@ -83,8 +76,11 @@ class Text():
 #         {"name": "Chrome", "date": "18:00 10 Fri 2021", "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo eveniet totam? Quisquam, facilis commodi."}
 #         ]
 
-# firstChannel = ChannelData('First Channel', 'Being First', "How this became the first channel", 'First')
-# firstChannel.add_member('First')
+firstChannel = ChannelData('Flackt Channel', 'Flackt', "Welcome to the Flackt Channel ", 'Flackt Admin')
+firstChannel.add_member('Flackt')
+firstChannelText = Text("Joined", "Flackt Admin created this channel")
+firstChannel.add_text(firstChannelText)
+firstChannel.add_text(Text("Flackt", "Welcome to Flackt"))
 # firstChannel.add_member('Second')
 # firstChannel.add_member('Third')
 
@@ -108,8 +104,7 @@ class Text():
 # fourthChannel.add_text(fourthChannelText)
 # secondChannelText = Text("Joined", "Second Created this channel")
 # secondChannel.add_text(secondChannelText)
-# firstChannelText = Text("Joined", "First Created this channel")
-# firstChannel.add_text(firstChannelText)
+
 # thirdChannelText = Text("Joined", "Third Created this channel")
 # thirdChannel.add_text(thirdChannelText)
 
@@ -130,3 +125,7 @@ class Text():
 #         "Second Channel": secondChannel, 
 #         "Third Channel": thirdChannel,
 #         "Fourth Channel": fourthChannel}        
+
+users = {}
+all_channels_info = {"Flackt Channel": firstChannel.get_channel_info()}
+channels = {"Flackt Channel": firstChannel}

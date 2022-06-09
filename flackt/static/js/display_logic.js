@@ -1,83 +1,91 @@
-import { addEventHandlers, changeSelectedChannel } from './index.js'
-import { getChannelContent } from './posts.js'
-import { closeModal } from './requests.js';
+/* eslint-disable import/no-cycle */
 
-class displayModal {
-    constructor(modalTemplate, context) {
-        this.modal = modalTemplate;
-        this.context = context;
-    }
-    
-    createModal() {        
-  
-        let modalWrapper = document.querySelector(".modal")
-        modalWrapper.innerHTML = this.modal(this.context)
-        
-    }    
+import { addEventHandlers, changeSelectedChannel } from './index.js';
+import { getChannelContent } from './posts.js';
 
-    showMessage(message, index) {
-        let messageElement = `<p>${message}</p>`        
-        let messageFormRow = document.querySelectorAll(".message")[index]
-        messageFormRow.style.display = 'block'
-        messageFormRow.innerHTML = messageElement
-        setTimeout(() => {
-            messageFormRow.style.display = 'none';
-        }, 10000)
-    }
-    clear() {                
-        let modalWrapper = document.querySelector(".modal")
-        modalWrapper.innerHTML = ''        
-    }        
+class DisplayModal {
+  constructor(modalTemplate, context) {
+    this.modal = modalTemplate;
+    this.context = context;
+  }
+
+  createModal() {
+    const modalWrapper = document.querySelector('.modal');
+    modalWrapper.innerHTML = this.modal(this.context);
+  }
+
+  showMessage(message, index) {
+    const messageElement = `<p>${message}</p>`,
+      messageFormRow = document.querySelectorAll('.message')[index];
+    messageFormRow.style.display = 'block';
+    messageFormRow.innerHTML = messageElement;
+    setTimeout(() => {
+      messageFormRow.style.display = 'none';
+    }, 10000);
+  }
+
+  clear() {
+    const modalWrapper = document.querySelector('.modal');
+    modalWrapper.innerHTML = '';
+  }
 }
 
+class FirstTimeModal extends DisplayModal {
+  scroll(number) {
+    const modalContainer = document.querySelector('#modal-container');
+    modalContainer.animate(
+      [{ left: `-${(number - 1) * 100}vw` }, { left: `-${number * 100}vw` }],
+      { duration: 1000, fill: 'forwards' }
+    );
+  }
 
-class firstTimeModal extends displayModal {
-    constructor(modalTemplate, context) {
-        super(modalTemplate, context)
-    }
-    scroll(number) {        
-        let modalContainer = document.querySelector("#modal-container")
-        modalContainer.animate([
-            {left: `-${(number - 1)* 100}vw`},{left: `-${number * 100}vw`}
-        ], {duration: 1000, fill: 'forwards'})                        
-    }    
+  scrollBack(number) {
+    const modalContainer = document.querySelector('#modal-container');
+    console.log('Number: ', number);
+    modalContainer.animate(
+      [{ left: `-${number * 100}vw` }, { left: `-${(number - 1) * 100}vw` }],
+      { duration: 1000, fill: 'forwards' }
+    );
+  }
 }
 
+class DisplayChannel {
+  constructor(channelData, context) {
+    this.channel = channelData;
+    this.context = context;
+  }
 
-class displayChannel {
-    constructor(channelData, context) {
-        this.channel = channelData
-        this.context= context
-    }    
-    get channelContext() {                        
-        let channelName = this.channel.channelName        
-        localStorage.setItem('lastChannel', channelName)
-        this.channel.channelMembers = this.channel.channelMembers.map(member => {
-            if (member == localStorage.getItem('displayName')) {
-                member = member + ' (You)'
-            }
-            return member
-        })
-        return this.channel
-    }    
-    updateChannelDisplay() {            
-        let channel = localStorage.getItem('lastChannel')          
-        let previousChannel = channel ? channel : 'None'
-        let newContext = {
-            ...this.context,
-            ...this.channelContext
-        }              
-  
-        let siteContainer = Handlebars.templates.siteContainer(newContext)
-        let container = document.querySelector('.site-container')        
-        container.innerHTML = siteContainer
-        let title = "Flackt | Channel"
-        document.title = title
-        history.pushState(null, title, `/chan/${newContext.channelName}`)
-        addEventHandlers()
-        changeSelectedChannel(newContext.channelName)        
-        getChannelContent(previousChannel, newContext.channelName)                
-    }    
+  get channelContext() {
+    const { channelName } = this.channel;
+    localStorage.setItem('lastChannel', channelName);
+    let displayName;
+    this.channel.channelMembers = this.channel.channelMembers.map((member) => {
+      if (member === localStorage.getItem('displayName')) {
+        displayName = `${member} (You)`;
+      }
+      return displayName;
+    });
+    return this.channel;
+  }
+
+  updateChannelDisplay() {
+    const channel = localStorage.getItem('lastChannel'),
+      previousChannel = channel || 'None',
+      newContext = {
+        ...this.context,
+        ...this.channelContext,
+      },
+      // eslint-disable-next-line no-undef
+      siteContainer = Handlebars.templates.siteContainer(newContext),
+      container = document.querySelector('.site-container');
+    container.innerHTML = siteContainer;
+    const title = 'Flackt | Channel';
+    document.title = title;
+    window.history.pushState(null, title, `/chan/${newContext.channelName}`);
+    addEventHandlers();
+    changeSelectedChannel(newContext.channelName);
+    getChannelContent(previousChannel, newContext.channelName);
+  }
 }
 
-export {firstTimeModal, displayChannel, displayModal}
+export { FirstTimeModal, DisplayChannel, DisplayModal };
