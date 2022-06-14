@@ -1,111 +1,100 @@
-<div id="nav-menu-container">
-    <div class="nav-menu-hide" id="nav-hamburger"></div>
+<div id='nav-menu-container'>
+  <div class='nav-menu-hide' id='nav-hamburger'></div>
 </div>
-<div class="group-info-btn-container">
-    <div class="group-info-btn-hide" id="group-btn">
-    </div>
+<div class='group-info-btn-container'>
+  <div class='group-info-btn-hide' id='group-btn'>
+  </div>
 </div>
-<header id="header">
-    <h2>{{channelName}}</h2>
-    <div id="toggles">
-        <div class="toggle-container">
-            <p id="toggle-label">Show channel info</p>
-            <div class="toggle switch-off">
-                <span class="toggle-switch off"></span>
-            </div>
-        </div>
+<header id='header'>
+  <h2>{{channelName}}</h2>
+  <div id='toggles'>
+    <div class='toggle-container'>
+      <p id='toggle-label'>Show channel info</p>
+      <div class='toggle switch-off'>
+        <span class='toggle-switch off'></span>
+      </div>
     </div>
+  </div>
 </header>
-<main id="main">
-    <div class="text-container">
-        <div></div>
-    </div>
+<main id='main'>
+  <div class='text-container'>
+    <div></div>
+  </div>
 </main>
-<nav id="nav">
-    <div class="member-channels">
-        <div id="list-and-choose">
-            <h2>Channels <i class="fa fa-caret-down" aria-hidden="true"></i></h2>            
-            {{#if channelsData}}                     
-            <form action="" id="select-channel-displayed">
-                                        
-                <select id="list" name="get-channel" size="7">
-                    {{!-- <option selected>Channel 1</option>
+<nav id='nav'>
+  <div class='member-channels'>
+    <div id='list-and-choose'>
+      <h2>Channels <i class='fa fa-caret-down' aria-hidden='true'></i></h2>
+      {{#if channelsData}}
+        <form action='' id='select-channel-displayed'>
+
+          <select id='list' name='get-channel' size='7'>
+            {{! <option selected>Channel 1</option>
                     <option>Channel 2</option>
                     <option>Channel 3</option>
                     <option>Channel 4</option>
                     <option>Channel 5</option>
                     <option>Channel 6</option>
-                    <option>Channel 7</option> --}}
-                    {{#each channelsData}}
+                    <option>Channel 7</option> }}
+            {{#each channelsData}}
 
-                    <option value="{{channelName}}">{{channelName}}</option>
-                    {{/each}}
-                </select>
-                <button type="submit" style="display: none;"></button>
-            </form>
-            {{else}}
-            <p class="no-channels">
-                    No Channels Available Yet
-            </p>
+              <option value='{{channelName}}'>{{channelName}}</option>
+            {{/each}}
+          </select>
+          <button type='submit' style='display: none;'></button>
+        </form>
+      {{else}}
+        <p class='no-channels'>
+          No Channels Available Yet
+        </p>
 
-            {{/if}}          
-        </div>
+      {{/if}}
     </div>
-    <div id="join-create">
-        <button id="nav-create-channel"><i class="fa fa-plus" aria-hidden="true"></i> Create Channel</button>
-        <button id="nav-join-channel"><i class="fas fa-user-friends    "></i> Join Channel</button>
-        <!-- <button> <i class="fas fa-user-edit    "></i>  My Profile</button> -->
-    </div>
-    <!-- <div class="notifications"></div> -->
+  </div>
+  <div id='join-create'>
+    <button id='nav-create-channel'><i
+        class='fa fa-plus'
+        aria-hidden='true'
+      ></i>
+      Create Channel</button>
+    <button id='nav-join-channel'><i class='fas fa-user-friends'></i>
+      Join Channel</button>
+    <!-- <button> <i class="fas fa-user-edit    "></i>  My Profile</button> -->
+  </div>
+  <!-- <div class="notifications"></div> -->
 </nav>
-<aside id="aside" class='aside-hide'>
-    <!--h1 class="channel-info-head">Channel Information</h1-->
-    <h1 class="channel-info-head">{{channelName}}</h1>
-    
-    <div class="channel-info-container">
-        <div class="channel-avatar">
-            <i class="fas fa-user-friends"></i>
-        </div>
-        <div class="channel-topic-description">
-            {{!-- <p class="channel-name-info"><b>Name:</b></p> --}}
-            {{!-- <p class="channel-name-text"></p> --}}
-            <p class="topic-info"><b>Topic:</b></p>
-            <p class="topic-text">{{channelTopic}}</p>
-            <p class="description-info"><b>Description:</b></p>
-            <p class="description-text">{{channelDescription}}</p>
-        </div>
-        <h1 class="members-head">Members</h1>
-        <div class="channel-members">
-            <ul class="members-info">
-                {{#each channelMembers}}
-                    <li>{{this}}</li>
-                {{/each}}
-                {{!-- <li>Member 1</li>
-                <li>Member 2</li>
-                <li>Member 3</li>
-                <li>Member 4</li>
-                <li>Member 5</li>
-                <li>Member 6</li>
-                <li>Member 7</li>
-                <li>Member 8</li>
-                <li>Member 9</li>
-                <li>Member 10</li>
-                <li>Member 11</li>
-                <li>Member 12</li>
-                <li>Member 13</li>
-                <li>Member 14</li>
-                <li>Member 15</li>
-                <li>Member 16</li>
-                <li>Member 17</li> --}}
-            </ul>
-        </div>
+<aside id='aside' class='aside-hide'>
+  <!--h1 class="channel-info-head">Channel Information</h1-->
+  <h1 class='channel-info-head'>{{channelName}}</h1>
+
+  <div class='channel-info-container'>
+    <div class='channel-avatar'>
+      <i class='fas fa-user-friends'></i>
     </div>
+    <div class='channel-topic-description'>
+      {{! <p class="channel-name-info"><b>Name:</b></p> }}
+      {{! <p class="channel-name-text"></p> }}
+      <p class='topic-info'><b>Topic:</b></p>
+      <p class='topic-text'>{{channelTopic}}</p>
+      <p class='description-info'><b>Description:</b></p>
+      <p class='description-text'>{{channelDescription}}</p>
+    </div>
+    <h1 class='members-head'>Members</h1>
+    <div class='channel-members'>
+      <ul class='members-info'>
+        {{#each channelMembers}}
+          <li>{{this}}</li>
+        {{/each}}
+
+      </ul>
+    </div>
+  </div>
 </aside>
-<footer id="footer">
-    <form action="" id="text-form" class="card">
-        <div class="form-row">
-            <div id="textbox" contenteditable="true" role="textbox"></div>
-            <button type="submit" id="send-button">Send</button>
-        </div>
-    </form>
+<footer id='footer'>
+  <form action='' id='text-form' class='card'>
+    <div class='form-row'>
+      <div id='textbox' contenteditable='true' role='textbox'></div>
+      <button type='submit' id='send-button'>Send</button>
+    </div>
+  </form>
 </footer>

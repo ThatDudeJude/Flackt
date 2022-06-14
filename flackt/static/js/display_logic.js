@@ -39,9 +39,9 @@ class FirstTimeModal extends DisplayModal {
     );
   }
 
+  // eslint-disable-next-line class-methods-use-this
   scrollBack(number) {
     const modalContainer = document.querySelector('#modal-container');
-    console.log('Number: ', number);
     modalContainer.animate(
       [{ left: `-${number * 100}vw` }, { left: `-${(number - 1) * 100}vw` }],
       { duration: 1000, fill: 'forwards' }
@@ -62,6 +62,8 @@ class DisplayChannel {
     this.channel.channelMembers = this.channel.channelMembers.map((member) => {
       if (member === localStorage.getItem('displayName')) {
         displayName = `${member} (You)`;
+      } else {
+        return member;
       }
       return displayName;
     });

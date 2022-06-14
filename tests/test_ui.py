@@ -36,7 +36,7 @@ def test_client_ui(client_ui):
     assert "More Channels" in source
 
     source = client_ui.join_channel_after_login()
-    assert "Fourth Channel" in source
+    assert "Flackt Channel" in source
 
     source = client_ui.send_group_text("Hello everyone.")  
     assert "Hello everyone." in source  

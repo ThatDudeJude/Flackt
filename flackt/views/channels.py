@@ -172,6 +172,7 @@ def joining_channel(channel_name):
         active_rooms[channel_name] = [session['current_user']]
     emit('Joined Room', {'memberName': f"{session['current_user']}", "isLive": True}, to=channel_name)    
     join_room(channel_name)
+    print("liveMembers", active_rooms[channel_name])
     emit('Update Live', {'liveMembers': active_rooms[channel_name]}, to=request.sid)
     
 

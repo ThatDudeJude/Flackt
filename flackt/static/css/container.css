@@ -612,8 +612,13 @@ ul.members-info::-webkit-scrollbar-thumb {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: blueviolet;
+  background-color: rgb(27, 2, 49);
   border: 1px green solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 900;
   /* margin: 0 auto; */
 }
 
@@ -1241,7 +1246,7 @@ ul.members-info::-webkit-scrollbar-thumb {
   height: max-content;
   text-align: center;
   width: 70vw;
-  margin: 20vh auto 0 auto;
+  margin: 15vh auto 0 auto;
 }
 
 .channel-add {
@@ -1365,9 +1370,15 @@ div.channel-add .form-row {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: violet;
-  border: 2px black solid;
+  background: rgb(27, 2, 49);
+  border: 2px 1px green solid;
   margin: 8px 8px 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
 }
 .chan-name-and-topic {
   padding: 5px;

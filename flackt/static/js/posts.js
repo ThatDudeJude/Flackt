@@ -98,6 +98,7 @@ function getChannelContent(prevChan, currChan, countStart = 1, numPosts = 10) {
       } else {
         text.sender = 'other';
       }
+      text = Object.assign(text, { sender_first_letter: text.name[0] });
       // eslint-disable-next-line no-undef
       message = Handlebars.templates.textTemplate(text);
     }
@@ -220,7 +221,7 @@ function getChannelContent(prevChan, currChan, countStart = 1, numPosts = 10) {
                 }
               });
             }
-          }, 1500);
+          }, 1000);
         });
 
         isLiveSocket.on('Update Live', (data) => {

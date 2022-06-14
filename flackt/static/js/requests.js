@@ -47,7 +47,9 @@ async function getChannelsList(type = 'all') {
     if (numberOfChannels) {
       const dataList = [];
       channelNames.forEach((name) => {
-        dataList.push(allChannels[name]);
+        const channel = allChannels[name];
+        channel.channel_first_letter = name[0].toUpperCase();
+        dataList.push(channel);
       });
       context.channelsData = dataList;
     } else {
@@ -274,7 +276,7 @@ function showErrorMessage(message) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // localStorage.clear()
+  localStorage.clear();
   if (!localStorage.getItem('displayName')) {
     getChannelsList().then((context) => {
       const mainContainer = Handlebars.templates.siteContainer(context),

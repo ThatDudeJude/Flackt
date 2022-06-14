@@ -22,7 +22,7 @@ from selenium.webdriver.support.ui import Select
 display_name = ""
 first_channel_name = ""
 channel_name_after_login = ""
-description_button_index = 1
+description_button_index = 0
 
 @pytest.fixture(scope='function')
 def app():
@@ -243,7 +243,7 @@ class ClientInterface():
             time.sleep(2.0)
             return self.driver.page_source
 
-    def join_channel(self, name="Fourth Channel"):
+    def join_channel(self, name="Flackt Channel"):
         time.sleep(2.5)
         wait = WebDriverWait(self.driver, 10)
         description_btns = wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, "button.description-btn")))
