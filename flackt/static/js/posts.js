@@ -196,6 +196,7 @@ function getChannelContent(prevChan, currChan, countStart = 1, numPosts = 10) {
               li.innerHTML = nameJoining;
               const memberList = document.querySelector('.members-info');
               memberList.append(li);
+              console.log('nameJoining is not currentUser');
             }
           }
           // eslint-disable-next-line no-shadow
@@ -231,6 +232,7 @@ function getChannelContent(prevChan, currChan, countStart = 1, numPosts = 10) {
 
           Array.from(members).forEach((member) => {
             const text = member.innerHTML;
+
             liveMembers.forEach((presentMember) => {
               if (text.includes(presentMember)) {
                 const live = liveNotification();

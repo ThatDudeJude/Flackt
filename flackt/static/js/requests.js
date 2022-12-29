@@ -192,7 +192,7 @@ function joinChannel(modal) {
           };
           socket.emit('submit text', textInfo);
         }
-      }, 1000);
+      }, 500);
     }
   }
 
