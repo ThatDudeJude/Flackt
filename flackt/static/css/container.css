@@ -175,7 +175,6 @@ body {
   padding: 1rem;
   font-size: 1.2rem;
   flex-grow: 1;
-  height: 3.2rem;
   /* margin: 0 auto; */
 }
 
@@ -401,33 +400,27 @@ div.channel-info-container {
 
 .channel-topic-description {
   display: grid;
-  grid-area: description;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas:
-    'channel-name-info channel-name-text' 'topic-info topic-text'
-    'description-info description-text';
   height: min-content;
   padding: 15px 0;
   gap: 20px;
-  /* row-gap: 10px; */
+  text-align: center;
 }
 
-.topic-info {
-  grid-area: topic-info;
-}
-
+.topic-info,
 .description-info {
-  grid-area: description-info;
+  font-size: 1.1rem;
 }
 
-.topic-text {
-  grid-area: topic-text;
+.topic-info b,
+.description-info b {
+  margin-right: 5px;
 }
 
-.description-text {
-  grid-area: description-text;
-}
+/* .topic-text {
+  font-size: 1.1rem;
+} */
 
 h1.members-head {
   grid-area: head;
@@ -832,7 +825,7 @@ ul.members-info::-webkit-scrollbar-thumb {
 
 @media (max-width: 900px) {
   .site-container {
-    position: relative;
+    position: fixed;
     font-size: 1rem;
     display: grid;
     grid-template-areas:
@@ -1276,9 +1269,8 @@ div.channel-add .channel-form {
 }
 
 div.channel-add .form-row {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 #create-channel-form input[type='submit'] {
@@ -1466,9 +1458,8 @@ div.channel-add .form-row {
   #create-channel {
     width: 97vw;
     padding: 5px;
-    margin-top: 10vh;
+    margin-top: 1vh;
   }
-
   div.channel-add .form-row {
     display: grid;
     grid-template-columns: 1fr;
@@ -1484,7 +1475,7 @@ div.channel-add .form-row {
   #channel-list-container {
     width: 99vw;
     height: 90vh;
-    margin-top: 3vh;
+    margin-top: 1vh;
   }
 
   #lone-modal .lone-modal-container #channel-list-container {
@@ -1508,6 +1499,12 @@ div.channel-add .form-row {
     padding: 0;
     margin-top: 0;
     width: 100%;
+  }
+  .joining-message,
+  .text-info,
+  .sender-text .text {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
 

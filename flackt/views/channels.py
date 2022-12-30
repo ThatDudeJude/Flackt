@@ -167,7 +167,7 @@ def add_text(text_data):
     channels[session["current_channel"]].add_text(sent_text)
     text = sent_text.get_text()
     print("text_data", text)
-    emit("broadcast text", text, to=session["current_channel"], broadCast=True)
+    emit("broadcast text", text, to=session["current_channel"], broadcast=True)
 
 
 @socket.on("join", namespace="/")
@@ -212,6 +212,7 @@ def joining_channel(channel_name):
         "Joined Room",
         {"memberName": f"{session['current_user']}", "isLive": True},
         to=channel_name,
+        broadcast=True,
     )
     join_room(channel_name)
     print("liveMembers", active_rooms[channel_name])
@@ -227,7 +228,6 @@ def leaving_channel(channel_name):
         {"memberName": f"{session['current_user']}", "isLive": False},
         to=channel_name,
         include_self=False,
-        broadCast=True,
     )
     leave_room(channel_name)
 
@@ -240,7 +240,6 @@ def leaving_channel():
         "Left Room",
         {"memberName": f"{session['current_user']}", "isLive": False},
         to=channel_name,
-        broadCast=True,
     )
     leave_room(channel_name)
 

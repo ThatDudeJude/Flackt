@@ -76,7 +76,6 @@ class DisplayChannel {
       newContext = {
         ...this.context,
         ...this.channelContext,
-        channelMembers: this.channelContext.channelMembers.concat(['Vako']),
       },
       // eslint-disable-next-line no-undef
       siteContainer = Handlebars.templates.siteContainer(newContext),
