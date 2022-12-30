@@ -1,0 +1,13 @@
+name: testing
+on: push
+env:
+  FLASK_RUN: flask run
+  PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
+
+jobs:
+  test_project:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Run pytest to test application
+        run: $FLASK_RUN
+          $PYTEST_RUN
