@@ -88,7 +88,7 @@ function getDisplayName(modal) {
     const data = JSON.parse(request.responseText);
 
     if (data.success) {
-      localStorage.setItem('displayName', displayName);
+      localStorage.setItem('flacktDisplayName', displayName);
       // getNameModal.clear();
       modal.scroll(scrollPage);
       scrollPage += 1;
@@ -119,7 +119,7 @@ function createNewChannel(modal) {
     const channelName = document.querySelector('#channel-name').value,
       channelTopic = document.querySelector('#channel-topic').value,
       channelDescription = document.querySelector('#channel-description').value,
-      channelCreator = localStorage.getItem('displayName');
+      channelCreator = localStorage.getItem('flacktDisplayName');
 
     request.open('POST', '/chan/create');
 
@@ -188,7 +188,9 @@ function joinChannel(modal) {
         if (socket) {
           const textInfo = {
             name: 'Joined',
-            text: `${localStorage.getItem('displayName')} joined this channel`,
+            text: `${localStorage.getItem(
+              'flacktDisplayName'
+            )} joined this channel`,
           };
           socket.emit('submit text', textInfo);
         }
@@ -276,8 +278,8 @@ function showErrorMessage(message) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  localStorage.clear();
-  if (!localStorage.getItem('displayName')) {
+  //   localStorage.clear();
+  if (!localStorage.getItem('flacktDisplayName')) {
     getChannelsList().then((context) => {
       const mainContainer = Handlebars.templates.siteContainer(context),
         container = document.querySelector('.site-container');
@@ -360,8 +362,8 @@ document.addEventListener('DOMContentLoaded', () => {
       };
     });
   } else {
-    const currentChannelName = localStorage.getItem('lastChannel'),
-      currentDisplayName = localStorage.getItem('displayName');
+    const currentChannelName = localStorage.getItem('flacktLastChannel'),
+      currentDisplayName = localStorage.getItem('flacktDisplayName');
     resumeChannelDisplay(currentDisplayName, currentChannelName);
   }
 });

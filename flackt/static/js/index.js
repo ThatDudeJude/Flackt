@@ -132,7 +132,7 @@ function addEventHandlers() {
 }
 
 function changeSelectedChannel(channelName) {
-  if (localStorage.getItem('lastChannel')) {
+  if (localStorage.getItem('flacktLastChannel')) {
     const selectedChannel = document.querySelector(
       `option[value='${channelName}']`
     );

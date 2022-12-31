@@ -57,10 +57,10 @@ class DisplayChannel {
 
   get channelContext() {
     const { channelName } = this.channel;
-    localStorage.setItem('lastChannel', channelName);
+    localStorage.setItem('flacktLastChannel', channelName);
     let displayName;
     this.channel.channelMembers = this.channel.channelMembers.map((member) => {
-      if (member === localStorage.getItem('displayName')) {
+      if (member === localStorage.getItem('flacktDisplayName')) {
         displayName = `${member} (You)`;
       } else {
         return member;
@@ -71,7 +71,7 @@ class DisplayChannel {
   }
 
   updateChannelDisplay() {
-    const channel = localStorage.getItem('lastChannel'),
+    const channel = localStorage.getItem('flacktLastChannel'),
       previousChannel = channel || 'None',
       newContext = {
         ...this.context,

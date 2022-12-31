@@ -31,7 +31,7 @@ function getChannelContent(prevChan, currChan, countStart = 1, numPosts = 10) {
     isLiveSocket.emit('leave', previousChannel);
     isLiveSocket.emit('join', currentChannel);
 
-    const name = localStorage.getItem('displayName'),
+    const name = localStorage.getItem('flacktDisplayName'),
       textForm = document.querySelector('#text-form');
     textForm.onsubmit = (e) => {
       e.preventDefault();
@@ -93,7 +93,7 @@ function getChannelContent(prevChan, currChan, countStart = 1, numPosts = 10) {
       message.className = 'joining-message';
       message = message.outerHTML;
     } else {
-      if (localStorage.getItem('displayName') === text.name) {
+      if (localStorage.getItem('flacktDisplayName') === text.name) {
         text.sender = 'self';
       } else {
         text.sender = 'other';
@@ -136,7 +136,7 @@ function getChannelContent(prevChan, currChan, countStart = 1, numPosts = 10) {
       loadingMessage.remove();
       textBox.prepend(loadingMessage);
       setTimeout(() => {
-        loadPosts(localStorage.getItem('lastChannel')).then(() => {
+        loadPosts(localStorage.getItem('flacktLastChannel')).then(() => {
           newHeight = textBox.scrollHeight;
           scrollHeight = newHeight - oldHeight;
           mainContainer.scrollTo(0, scrollHeight * 0.95);
@@ -189,7 +189,7 @@ function getChannelContent(prevChan, currChan, countStart = 1, numPosts = 10) {
 
           if (text.name === 'Joined') {
             const nameJoining = /[\w]+/.exec(text.text)[0],
-              currentUser = localStorage.getItem('displayName');
+              currentUser = localStorage.getItem('flacktDisplayName');
 
             if (nameJoining !== currentUser) {
               const li = document.createElement('li');
