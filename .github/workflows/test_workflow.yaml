@@ -1,13 +1,15 @@
 name: testing
 on: push
 env:
+  INSTALL_REQUIREMENTS: pip3 install requirements.txt
   FLASK_RUN: flask run
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
 
 jobs:
   test_project:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Run pytest to test application
-        run: $FLASK_RUN
+        run: $ INSTALL_REQUIREMENTS
+          $FLASK_RUN
           $PYTEST_RUN
