@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Run pytest to test application
-        run: $ INSTALL_REQUIREMENTS
+        run: $INSTALL_REQUIREMENTS
           $FLASK_RUN
           $PYTEST_RUN
