@@ -8,9 +8,6 @@ class Config(object):
     DEBUG = True
     TESTING = False
     SECRET_KEY = env.str("SECRET_KEY")
-    # @property
-    # some function(self):
-    # self.ENV_SETTING_CONFIG=value
 
 
 class ProductionConfig(Config):

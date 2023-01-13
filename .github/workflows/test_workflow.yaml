@@ -1,15 +1,39 @@
 name: testing
 on: push
 env:
-  INSTALL_REQUIREMENTS: pip3 install requirements.txt
-  FLASK_RUN: flask run
+  INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
 
 jobs:
-  test_project:
+  unit_tests:
     runs-on: ubuntu-20.04
     steps:
-      - name: Run pytest to test application
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8.5'
+      - name: Run pytest for unit test
         run: $INSTALL_REQUIREMENTS
           $FLASK_RUN
           $PYTEST_RUN
+
+  e2e_test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8.5'
+      - name: Prepare Selenium
+        uses: nanasess/setup-chromedriver@v1.0.5
+      - name: Start XVFB
+        run: |
+          Xvfb :99 &
+      - name: Run selenium test
+        run: pytest tests/test_ui.py
+        env:
+          DISPLAY: :99

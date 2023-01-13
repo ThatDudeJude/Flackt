@@ -1,8 +1,11 @@
 *.pyc
 *.pem
+.vscode
+.pytest_cache
+workspace.code-workspace
+geckodriver.log
 /instance/**
 venv
-/tests/**
 *.handlebars
 package-lock.json
 package.json
