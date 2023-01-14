@@ -15,15 +15,16 @@ jobs:
         with:
           python-version: '3.8.5'
       - name: Run pytest for unit test
-        run: $INSTALL_REQUIREMENTS
+        run: |
+	        $INSTALL_REQUIREMENTS
           $FLASK_RUN
           $PYTEST_RUN
 
   e2e_test:
     runs-on: ubuntu-20.04
     steps:
-      - name:
-      - uses: actions/checkout@v2
+      - name: Check out code
+        uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
