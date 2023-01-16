@@ -44,7 +44,7 @@ jobs:
           Xvfb :99 &
       - name: Run selenium test
         run: |
-        pip install -e .
-        pytest tests/test_ui.py
+          pip install -e .
+          pytest tests/test_ui.py
         env:
           DISPLAY: :99
