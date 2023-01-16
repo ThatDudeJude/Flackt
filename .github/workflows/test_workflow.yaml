@@ -17,7 +17,7 @@ jobs:
           python-version: '3.8.5'
       - name: Run pytest for unit test
         run: |
-	        $INSTALL_REQUIREMENTS          
+          $INSTALL_REQUIREMENTS          
           $PYTEST_RUN
 
   e2e_test:
@@ -34,7 +34,7 @@ jobs:
       - name: Start flask app
         run: |
           $INSTALL_REQUIREMENTS          
-          $FLASK_RUN          
+          $FLASK_RUN
         env:
           FLASK_APP: flackt
           FLASK_ENV: development
@@ -44,4 +44,4 @@ jobs:
       - name: Run selenium test
         run: pytest tests/test_ui.py
         env:
-          DISPLAY: :99      
+          DISPLAY: :99
