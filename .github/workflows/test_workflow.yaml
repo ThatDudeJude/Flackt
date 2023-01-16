@@ -2,6 +2,7 @@ name: testing
 on: push
 env:
   INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
+  FLASK_RUN: flask run
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
 
 jobs:
@@ -16,8 +17,7 @@ jobs:
           python-version: '3.8.5'
       - name: Run pytest for unit test
         run: |
-	        $INSTALL_REQUIREMENTS
-          $FLASK_RUN
+	        $INSTALL_REQUIREMENTS          
           $PYTEST_RUN
 
   e2e_test:
@@ -33,6 +33,8 @@ jobs:
         uses: nanasess/setup-chromedriver@v1.0.5
       - name: Start XVFB
         run: |
+          $INSTALL_REQUIREMENTS
+          $FLASK_RUN
           Xvfb :99 &
       - name: Run selenium test
         run: pytest tests/test_ui.py
