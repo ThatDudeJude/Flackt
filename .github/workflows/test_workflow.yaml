@@ -2,7 +2,7 @@ name: testing
 on: push
 env:
   INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
-  FLASK_RUN: nohup bash -c "flask run" > selenium_log.txt
+  FLASK_RUN: nohup bash -c 'flask run' > selenium_log.txt
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
 
 jobs:
@@ -17,7 +17,8 @@ jobs:
           python-version: '3.8.5'
       - name: Run pytest for unit test
         run: |
-          $INSTALL_REQUIREMENTS          
+          $INSTALL_REQUIREMENTS         
+          pip install -e . 
           $PYTEST_RUN
 
   e2e_test:
@@ -42,6 +43,8 @@ jobs:
         run: |
           Xvfb :99 &
       - name: Run selenium test
-        run: pytest tests/test_ui.py
+        run: |
+        pip install -e .
+        pytest tests/test_ui.py
         env:
           DISPLAY: :99
