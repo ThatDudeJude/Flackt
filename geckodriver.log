@@ -372,3 +372,1049 @@ Read port: 39263
 1673850971849	Marionette	INFO	Stopped listening on port 39263
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
 JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1673853946546	geckodriver	INFO	Listening on 127.0.0.1:43901
+1673853946555	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55995" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileLy42mK"
+1673853973673	geckodriver	INFO	Listening on 127.0.0.1:59531
+1673853973680	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40061" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledwJnQc"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673854053403	geckodriver	INFO	Listening on 127.0.0.1:60681
+1673854053411	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45587" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile56LfDe"
+1673855037502	geckodriver	INFO	Listening on 127.0.0.1:57979
+1673855037508	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56059" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileQKgJpH"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673855053686	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQKgJpH/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+DevTools listening on ws://localhost:56059/devtools/browser/7081cd65-fc79-4d0c-9379-b25a588414e1
+1673855060521	Marionette	INFO	Listening on port 35989
+Read port: 35989
+1673855060581	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1673855103920	Marionette	INFO	Stopped listening on port 35989
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 1196: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1673855270398	geckodriver	INFO	Listening on 127.0.0.1:35801
+1673855270856	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35217" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile6ArmhG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673855282871	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6ArmhG/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+DevTools listening on ws://localhost:35217/devtools/browser/34ed24b8-51ca-46a9-b06a-1d2354c78a18
+1673855292403	Marionette	INFO	Listening on port 42643
+Read port: 42643
+1673855292511	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1673855395656	Marionette	INFO	Stopped listening on port 42643
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1673856163687	geckodriver	INFO	Listening on 127.0.0.1:45397
+1673856163694	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45537" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekYS7po"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673856166048	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekYS7po/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+DevTools listening on ws://localhost:45537/devtools/browser/bd60f20a-5be3-4fde-91fb-9cd226c2573a
+1673856170806	Marionette	INFO	Listening on port 35373
+Read port: 35373
+1673856170950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1673856193671	Marionette	INFO	Stopped listening on port 35373
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1673856304747	geckodriver	INFO	Listening on 127.0.0.1:35123
+1673856304755	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39123" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile0trwOZ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673856307292	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0trwOZ/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+Failed to create /home/that-dude-jude/.cache/mesa_shader_cache/ae for shader cache (No space left on device)---disabling.
+DevTools listening on ws://localhost:39123/devtools/browser/d40a33fb-dd2d-49c0-b390-7e3d36d3a370
+1673856311312	Marionette	INFO	Listening on port 33481
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+1673856311449	CDP	WARN	Failed to create /tmp/rust_mozprofile0trwOZ/DevToolsActivePort (Could not write chunk (size = 60) to file /tmp/rust_mozprofile0trwOZ/DevToolsActivePort. The file may be corrupt.)
+1673856311458	Marionette	WARN	Failed to create /tmp/rust_mozprofile0trwOZ/MarionetteActivePort (Could not write chunk (size = 5) to file /tmp/rust_mozprofile0trwOZ/MarionetteActivePort. The file may be corrupt.)
+Read port: 
+1673856311466	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856311567	geckodriver::browser	WARN	Failed fo convert  to u16
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+Read port: 
+1673856311668	geckodriver::browser	WARN	Failed fo convert  to u16
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+Read port: 
+1673856311768	geckodriver::browser	WARN	Failed fo convert  to u16
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+Read port: 
+1673856311869	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856311969	geckodriver::browser	WARN	Failed fo convert  to u16
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+Read port: 
+1673856312069	geckodriver::browser	WARN	Failed fo convert  to u16
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.error: SearchService: "_init: failure initializing search:" 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 196: NS_ERROR_UNEXPECTED: SearchService previously failed to initialize
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 1314: NS_ERROR_UNEXPECTED: SearchService initialization failed
+Read port: 
+1673856312170	geckodriver::browser	WARN	Failed fo convert  to u16
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: , line 0: uncaught exception: 2147549183
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("cannot write without any engine.", "resource://gre/modules/SearchSettings.jsm", 216))
+Read port: 
+1673856312270	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856312371	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856312471	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856312572	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856312672	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856312772	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856312873	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856312973	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313074	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313174	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313274	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313375	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313475	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313576	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313676	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313777	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313877	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856313978	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314078	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314178	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314279	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314379	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314480	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314580	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314681	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314781	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314882	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856314982	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315083	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315184	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315285	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315385	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315485	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315586	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315686	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315787	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315887	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856315988	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316088	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316189	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316289	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316390	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316490	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316590	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316691	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316791	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316891	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856316992	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317092	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317193	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317293	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317394	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317494	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317594	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317695	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317795	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317896	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856317996	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318097	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318197	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318298	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318398	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318499	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318599	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318700	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318800	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856318900	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319001	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319101	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319202	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319302	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319403	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319503	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319603	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319704	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319804	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856319905	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320005	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320105	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320206	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320311	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320412	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320512	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320613	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320713	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320814	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856320914	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321015	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321115	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321216	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321316	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321417	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321517	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321618	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321718	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321819	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856321919	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322020	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322120	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322220	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322321	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322421	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322522	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322622	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322723	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322823	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856322924	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323024	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323124	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323225	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323325	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323426	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323526	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323626	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323727	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323827	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856323928	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324028	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324128	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324229	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324329	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324430	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324530	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324630	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324731	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324831	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856324932	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325032	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325132	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325233	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325334	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325434	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325535	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325635	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325736	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325836	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856325936	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326037	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326137	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326238	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326338	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326439	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326539	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326640	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326740	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326841	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856326942	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327042	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327143	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327243	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327343	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327444	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327544	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327645	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327745	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327846	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856327946	geckodriver::browser	WARN	Failed fo convert  to u16
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 822) to file /tmp/rust_mozprofile0trwOZ/sessionstore-backups/recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+Read port: 
+1673856328047	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328147	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328248	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328348	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328448	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328549	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328649	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328750	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328850	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856328950	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329051	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329151	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329252	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329352	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329453	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329553	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329654	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329754	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329855	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856329955	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330055	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330156	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330257	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330357	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330463	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330563	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330664	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330764	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330865	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856330965	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331066	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331166	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331266	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331367	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331467	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331568	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331668	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331768	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331869	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856331969	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332070	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332170	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332271	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332371	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332472	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332572	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332673	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332773	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332874	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856332974	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856333075	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856333175	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856333276	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856333376	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856333477	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856333577	geckodriver::browser	WARN	Failed fo convert  to u16
+1673856333624	Marionette	INFO	Stopped listening on port 33481
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 862) to file /tmp/rust_mozprofile0trwOZ/sessionstore.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 122) to file /tmp/rust_mozprofile0trwOZ/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 146) to file /tmp/rust_mozprofile0trwOZ/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 193) to file /tmp/rust_mozprofile0trwOZ/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 228) to file /tmp/rust_mozprofile0trwOZ/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotReadableError: Could not write chunk (size = 259) to file /tmp/rust_mozprofile0trwOZ/sessionCheckpoints.json.tmp. The file may be corrupt.
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  CrashMonitor: Writing notifications to file after receiving profile-before-change and awaiting all checkpoints written
+          Phase: IOUtils: waiting for profileBeforeChange IO to complete
+          State: {"profile-after-change":true,"final-ui-startup":true,"sessionstore-windows-restored":true,"quit-application-granted":true,"quit-application":true,"sessionstore-final-state-write-complete":true,"profile-change-net-teardown":true,"profile-change-teardown":true,"profile-before-change":true}
+WARNING: NotReadableError: Could not write chunk (size = 288) to file /tmp/rust_mozprofile0trwOZ/sessionCheckpoints.json.tmp. The file may be corrupt.
+WARNING: observe@resource://gre/modules/AsyncShutdown.jsm:575:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotReadableError: Could not write chunk (size = 288) to file /tmp/rust_mozprofile0trwOZ/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: Object
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: Object
+1673856570920	geckodriver	INFO	Listening on 127.0.0.1:41819
+1673856683584	geckodriver	INFO	Listening on 127.0.0.1:56713
+1673856683590	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56873" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile89gLCi"
+1673856730940	geckodriver	INFO	Listening on 127.0.0.1:46329
+1673856730985	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38821" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileLlrqdU"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673856733429	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLlrqdU/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+DevTools listening on ws://localhost:38821/devtools/browser/48c16cc2-4020-4f2f-8047-149a8b738c63
+1673856746394	CDP	WARN	Failed to create /tmp/rust_mozprofileLlrqdU/DevToolsActivePort (Could not write chunk (size = 60) to file /tmp/rust_mozprofileLlrqdU/DevToolsActivePort. The file may be corrupt.)
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.error: SearchService: "_init: failure initializing search:" 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 196: NS_ERROR_UNEXPECTED: SearchService previously failed to initialize
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 1314: NS_ERROR_UNEXPECTED: SearchService initialization failed
+JavaScript error: , line 0: uncaught exception: 2147549183
+1673856746496	Marionette	INFO	Listening on port 41103
+1673856746498	Marionette	WARN	Failed to create /tmp/rust_mozprofileLlrqdU/MarionetteActivePort (Could not write chunk (size = 5) to file /tmp/rust_mozprofileLlrqdU/MarionetteActivePort. The file may be corrupt.)
+Read port: 
+1673856746501	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856746601	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856746701	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856746802	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856746902	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856747003	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856747103	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856747204	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856747305	geckodriver::browser	WARN	Failed fo convert  to u16
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("cannot write without any engine.", "resource://gre/modules/SearchSettings.jsm", 216))
+Read port: 
+1673856747405	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856747505	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856747606	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856747706	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856747807	geckodriver::browser	WARN	Failed fo convert  to u16
+console.error: "Could not write session state file " (new Error("Could not create directory at /tmp/rust_mozprofileLlrqdU/sessionstore-backups", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+Read port: 
+1673856747907	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748008	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748108	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748208	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748309	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748409	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748510	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748610	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748711	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748811	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856748911	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749012	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749112	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749213	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749313	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749414	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749514	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749615	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749715	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749815	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856749919	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750019	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750120	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750220	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750321	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750421	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750521	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750622	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750722	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750822	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856750923	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751023	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751124	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751224	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751325	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751425	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751526	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751626	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751726	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751827	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856751927	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752027	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752128	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752228	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752328	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752429	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752529	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752630	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752730	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752830	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856752931	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753031	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753132	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753232	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753332	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753433	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753533	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753634	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753734	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753834	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856753935	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754035	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754136	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754236	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754337	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754437	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754538	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754638	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754738	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754839	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856754939	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755040	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755140	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755246	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755346	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755447	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755547	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755647	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755748	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755848	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856755948	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756049	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756149	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756250	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756350	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756450	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756551	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756651	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756752	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756853	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856756953	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757053	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757154	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757254	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757355	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757455	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757555	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757656	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757756	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757857	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856757957	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758058	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758158	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758259	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758359	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758460	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758560	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758661	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758761	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758863	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856758964	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759064	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759165	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759265	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759366	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759466	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759567	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759667	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759767	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759868	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856759968	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856760069	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856760169	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856760270	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856760370	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856760476	geckodriver::browser	WARN	Failed fo convert  to u16
+Read port: 
+1673856760577	geckodriver::browser	WARN	Failed fo convert  to u16
+1673856760645	Marionette	INFO	Stopped listening on port 41103
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 856) to file /tmp/rust_mozprofileLlrqdU/sessionstore.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 122) to file /tmp/rust_mozprofileLlrqdU/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 146) to file /tmp/rust_mozprofileLlrqdU/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 193) to file /tmp/rust_mozprofileLlrqdU/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 228) to file /tmp/rust_mozprofileLlrqdU/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotReadableError: Could not write chunk (size = 259) to file /tmp/rust_mozprofileLlrqdU/sessionCheckpoints.json.tmp. The file may be corrupt.
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  CrashMonitor: Writing notifications to file after receiving profile-before-change and awaiting all checkpoints written
+          Phase: IOUtils: waiting for profileBeforeChange IO to complete
+          State: {"profile-after-change":true,"final-ui-startup":true,"sessionstore-windows-restored":true,"quit-application-granted":true,"quit-application":true,"sessionstore-final-state-write-complete":true,"profile-change-net-teardown":true,"profile-change-teardown":true,"profile-before-change":true}
+WARNING: NotReadableError: Could not write chunk (size = 288) to file /tmp/rust_mozprofileLlrqdU/sessionCheckpoints.json.tmp. The file may be corrupt.
+WARNING: observe@resource://gre/modules/AsyncShutdown.jsm:575:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotReadableError: Could not write chunk (size = 288) to file /tmp/rust_mozprofileLlrqdU/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: Object
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: Object
+1673856812165	geckodriver	INFO	Listening on 127.0.0.1:58849
+1673856812174	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43477" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRAf70i"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673856815461	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRAf70i/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+DevTools listening on ws://localhost:43477/devtools/browser/586f1d45-466b-4bc6-8df9-0ff243ae5c48
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  QuotaExceededError
+1673856828587	Marionette	INFO	Listening on port 37941
+Read port: 37941
+1673856828627	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: , line 0: QuotaExceededError: The current transaction exceeded its quota limitations.
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.error: SearchService: "_init: failure initializing search:" 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 196: NS_ERROR_UNEXPECTED: SearchService previously failed to initialize
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 1314: NS_ERROR_UNEXPECTED: SearchService initialization failed
+console.log: "RemoteSettingsWorker error: QuotaExceededError: IndexedDB:  execute() The current transaction exceeded its quota limitations."
+JavaScript error: , line 0: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/PlacesUtils.jsm, line 1999: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.tagsFolder]
+console.error: SearchSettings: "_write: Could not write to settings file:" (new Error("cannot write without any engine.", "resource://gre/modules/SearchSettings.jsm", 216))
+console.error: "Could not write session state file " (new Error("Could not write chunk (size = 924) to file /tmp/rust_mozprofileRAf70i/sessionstore-backups/recovery.jsonlz4.tmp. The file may be corrupt.", (void 0), 106)) "DOMException@resource://gre/modules/PromiseWorker.jsm:106:18\npostMessage@resource://gre/modules/PromiseWorker.jsm:342:55\n"
+1673856837011	Marionette	INFO	Stopped listening on port 37941
+JavaScript error: , line 0: NotReadableError: Could not write chunk (size = 122) to file /tmp/rust_mozprofileRAf70i/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: Object
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotReadableError: Could not write chunk (size = 288) to file /tmp/rust_mozprofileRAf70i/sessionCheckpoints.json.tmp. The file may be corrupt.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: Object
+1673857055218	geckodriver	INFO	Listening on 127.0.0.1:33853
+1673857055339	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58169" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYd3Qzk"
+Failed to import the site module
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site.py", line 570, in <module>
+  File "/usr/lib/python3.6/site.py", line 557, in main
+    known_paths = addsitepackages(known_paths)
+  File "/usr/lib/python3.6/site.py", line 345, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/usr/lib/python3.6/site.py", line 213, in addsitedir
+    addpackage(sitedir, name, known_paths)
+  File "/usr/lib/python3.6/site.py", line 174, in addpackage
+    exec(line)
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.6/importlib/util.py", line 2, in <module>
+    from . import abc
+  File "/usr/lib/python3.6/importlib/abc.py", line 282, in <module>
+    machinery.SourcelessFileLoader)
+  File "/usr/lib/python3.6/importlib/abc.py", line 26, in _register
+    abstract_cls.register(frozen_cls)
+  File "/usr/lib/python3.6/abc.py", line 158, in register
+    if issubclass(subclass, cls):
+  File "/usr/lib/python3.6/abc.py", line 204, in __subclasscheck__
+    cls._abc_negative_cache = WeakSet()
+KeyboardInterrupt
+1673857260321	geckodriver	INFO	Listening on 127.0.0.1:36533
+1673857443598	geckodriver	INFO	Listening on 127.0.0.1:44711
+1673857443605	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49891" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileycORFI"
+1673858945977	geckodriver	INFO	Listening on 127.0.0.1:34965
+1673859012135	geckodriver	INFO	Listening on 127.0.0.1:49107
+1673860887928	geckodriver	INFO	Listening on 127.0.0.1:43669
+1673860888438	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53435" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFgjZP3"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673860902550	Marionette	INFO	Marionette enabled
+1673861530361	geckodriver	INFO	Listening on 127.0.0.1:43183
+1673861530374	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39833" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWBlVhg"
+1673861765502	geckodriver	INFO	Listening on 127.0.0.1:41257
+1673861765509	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46589" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilea033xq"
+Exception ignored in: <function _get_module_lock.<locals>.cb at 0x7ff14b5b6bf8>
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap>", line 182, in cb
+KeyboardInterrupt: 
+Traceback (most recent call last):
+  File "/usr/bin/lsb_release", line 20, in <module>
+    from optparse import OptionParser
+  File "/usr/lib/python3.6/optparse.py", line 424, in <module>
+  File "/usr/lib/python3.6/gettext.py", line 627, in gettext
+    return dgettext(_current_domain, message)
+  File "/usr/lib/python3.6/gettext.py", line 590, in dgettext
+    codeset=_localecodesets.get(domain))
+  File "/usr/lib/python3.6/gettext.py", line 525, in translation
+    mofiles = find(domain, localedir, languages, all=True)
+  File "/usr/lib/python3.6/gettext.py", line 482, in find
+    for nelang in _expand_lang(lang):
+  File "/usr/lib/python3.6/gettext.py", line 206, in _expand_lang
+    loc = locale.normalize(loc)
+  File "/usr/lib/python3.6/locale.py", line 444, in normalize
+    return _replace_encoding(code, encoding)
+  File "/usr/lib/python3.6/locale.py", line 351, in _replace_encoding
+    norm_encoding = encodings.normalize_encoding(encoding)
+  File "/usr/lib/python3.6/encodings/__init__.py", line 56, in normalize_encoding
+    if isinstance(encoding, bytes):
+KeyboardInterrupt
+1673862312924	geckodriver	INFO	Listening on 127.0.0.1:46963
+1673862312930	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36239" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZloDkF"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673862315639	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZloDkF/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+DevTools listening on ws://localhost:36239/devtools/browser/c618348f-a148-48d5-8fc9-5014de39123d
+1673862325640	Marionette	INFO	Listening on port 44755
+Read port: 44755
+1673862325878	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://127.0.0.1:5000"
+1673862339110	Marionette	INFO	Stopped listening on port 44755
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

@@ -2,7 +2,7 @@ name: testing
 on: push
 env:
   INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
-  FLASK_RUN: flask run
+  FLASK_RUN: nohup bash -c "flask run"
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
 
 jobs:
@@ -31,12 +31,17 @@ jobs:
           python-version: '3.8.5'
       - name: Prepare Selenium
         uses: nanasess/setup-chromedriver@v1.0.5
+      - name: Start flask app
+        run: |
+          $INSTALL_REQUIREMENTS          
+          $FLASK_RUN          
+        env:
+          FLASK_APP: flackt
+          FLASK_ENV: development
       - name: Start XVFB
         run: |
-          $INSTALL_REQUIREMENTS
-          $FLASK_RUN
           Xvfb :99 &
       - name: Run selenium test
         run: pytest tests/test_ui.py
         env:
-          DISPLAY: :99
+          DISPLAY: :99      
