@@ -37,8 +37,7 @@ jobs:
       - name: Start flask app
         run: |
           $INSTALL_REQUIREMENTS          
-          $FLASK_RUN
-          exit 0
+          nohup python -m flask run &
         env:
           FLASK_APP: flackt
           FLASK_ENV: development
