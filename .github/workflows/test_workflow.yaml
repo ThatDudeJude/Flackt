@@ -20,6 +20,7 @@ jobs:
           $INSTALL_REQUIREMENTS         
           pip install -e . 
           $PYTEST_RUN
+        shell: bash
         env:
           SECRET_KEY: ${{secrets.SECRET_KEY}}
 
