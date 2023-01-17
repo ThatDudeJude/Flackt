@@ -2,7 +2,7 @@ name: testing
 on: push
 env:
   INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
-  FLASK_RUN: nohup bash -c \'flask\ run\' > selenium_log.txt
+  FLASK_RUN: nohup python -m flask run
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
           pip install -e . 
           $PYTEST_RUN
 
-  e2e_test:
+  e2e_tests:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out code
@@ -32,6 +32,7 @@ jobs:
           python-version: '3.8.5'
       - name: Prepare Selenium
         uses: nanasess/setup-chromedriver@v1.0.5
+        run: sudo apt install firefox-geckodriver
       - name: Start flask app
         run: |
           $INSTALL_REQUIREMENTS          
@@ -39,6 +40,7 @@ jobs:
         env:
           FLASK_APP: flackt
           FLASK_ENV: development
+          MOZ_HEADLESS: '1'
       - name: Start XVFB
         run: |
           Xvfb :99 &
