@@ -2,7 +2,7 @@ name: testing
 on: push
 env:
   INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
-  FLASK_RUN: nohup python -m flask run
+  FLASK_RUN: nohup python -m flask run > nohup_log.txt
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
 
 jobs:
@@ -50,6 +50,7 @@ jobs:
           sudo apt install firefox-geckodriver
           pip install -e .
           pytest tests/test_ui.py
+          kill -9 $(lsof -i :5000 | awk 'FNR > 1 {print $2}')
         env:
           DISPLAY: :99
           MOZ_HEADLESS: '1'
