@@ -4,7 +4,6 @@
 .pytest_cache
 workspace.code-workspace
 geckodriver.log
-/instance/**
 venv
 *.handlebars
 package-lock.json
