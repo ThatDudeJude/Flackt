@@ -20,6 +20,8 @@ jobs:
           $INSTALL_REQUIREMENTS         
           pip install -e . 
           $PYTEST_RUN
+        env:
+          SECRET_KEY: ${{secrets.SECRET_KEY}}
 
   e2e_tests:
     runs-on: ubuntu-20.04
@@ -39,6 +41,7 @@ jobs:
         env:
           FLASK_APP: flackt
           FLASK_ENV: development
+          SECRET_KEY: ${{secrets.SECRET_KEY}}
       - name: Start XVFB
         run: |
           Xvfb :99 &
