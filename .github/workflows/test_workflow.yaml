@@ -35,11 +35,10 @@ jobs:
       - name: Prepare Selenium
         uses: nanasess/setup-chromedriver@v1.0.5
       - name: Start flask app
-        uses: JarvusInnovations/background-action@v1
-        with:
-          run: |
-            $INSTALL_REQUIREMENTS          
-            $FLASK_RUN
+        run: |
+          $INSTALL_REQUIREMENTS          
+          $FLASK_RUN
+          exit 0
         env:
           FLASK_APP: flackt
           FLASK_ENV: development
