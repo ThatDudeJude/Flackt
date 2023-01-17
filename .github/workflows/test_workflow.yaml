@@ -2,7 +2,7 @@ name: testing
 on: push
 env:
   INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
-  FLASK_RUN: nohup python -m flask run &
+  FLASK_RUN: (nohup python -m flask run)&
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
 
 jobs:
