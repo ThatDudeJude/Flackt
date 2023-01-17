@@ -32,7 +32,6 @@ jobs:
           python-version: '3.8.5'
       - name: Prepare Selenium
         uses: nanasess/setup-chromedriver@v1.0.5
-        run: sudo apt install firefox-geckodriver
       - name: Start flask app
         run: |
           $INSTALL_REQUIREMENTS          
@@ -45,6 +44,7 @@ jobs:
           Xvfb :99 &
       - name: Run selenium test
         run: |
+          sudo apt install firefox-geckodriver
           pip install -e .
           pytest tests/test_ui.py
         env:
