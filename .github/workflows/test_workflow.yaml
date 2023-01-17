@@ -43,7 +43,7 @@ jobs:
           SECRET_KEY: ${{secrets.SECRET_KEY}}
       - name: Start XVFB
         run: |
-          Xvfb :99 --screen 0 1056x756x32&
+          Xvfb :99 --screen 0 1056x768x32 &
       - name: Run selenium test
         run: |
           sudo apt install firefox-geckodriver
