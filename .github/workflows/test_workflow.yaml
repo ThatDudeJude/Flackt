@@ -40,7 +40,6 @@ jobs:
         env:
           FLASK_APP: flackt
           FLASK_ENV: development
-          MOZ_HEADLESS: '1'
       - name: Start XVFB
         run: |
           Xvfb :99 &
@@ -50,3 +49,4 @@ jobs:
           pytest tests/test_ui.py
         env:
           DISPLAY: :99
+          MOZ_HEADLESS: '1'
