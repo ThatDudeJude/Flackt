@@ -12,3 +12,4 @@ package.json
 .eslintrc.json
 /node_modules
 **/__pycache__/
+.env
