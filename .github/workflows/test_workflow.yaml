@@ -47,7 +47,7 @@ jobs:
           SECRET_KEY: ${{secrets.SECRET_KEY}}
       - name: Start XVFB
         run: |
-          sudo Xvfb -ac :99 -screen 0 1056x768x32 > /
+          sudo Xvfb -ac :99 -screen 0 1056x768x32 > /dev/null 2>&1 &
         env:
           DISPLAY: :99
       - name: Set up firefox
