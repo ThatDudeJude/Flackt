@@ -37,6 +37,7 @@ jobs:
       #   chromedriver --url-base=/wd/hub &
       - name: Start flask app
         run: |
+          echo $PATH
           which chromedriver
           which google-chrome
           chromedriver --version
