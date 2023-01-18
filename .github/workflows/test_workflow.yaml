@@ -32,9 +32,7 @@ jobs:
         with:
           python-version: '3.8.5'
       - name: Prepare Selenium
-        uses: nanasess/setup-chromedriver@v1
-      # - run: |
-      #     chromedriver --url-base=/wd/hub &
+        uses: nanasess/setup-chromedriver@v1.0.5
       - name: Start flask app
         run: |
           $INSTALL_REQUIREMENTS          
@@ -45,17 +43,14 @@ jobs:
           SECRET_KEY: ${{secrets.SECRET_KEY}}
       - name: Start XVFB
         run: |
-          sudo Xvfb :99 -screen 0 1056x768x32 &
-      - name: Set up firefox
-        run: |
-          sudo apt install firefox-geckodriver
-        env:
-          MOZ_HEADLESS: '1'
+          Xvfb :99 -screen 0 1056x768x32 &
       - name: Run selenium test
         run: |
+          sudo apt install firefox-geckodriver
           pip install -e .
           pytest tests/test_ui.py
           kill -9 $(lsof -i :5000 | awk 'FNR > 1 {print $2}')
         env:
-          SECRET_KEY: ${{secrets.SECRET_KEY}}
           DISPLAY: :99
+          MOZ_HEADLESS: '1'
+          SECRET_KEY: ${{secrets.SECRET_KEY}}
