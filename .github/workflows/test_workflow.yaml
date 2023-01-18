@@ -37,6 +37,8 @@ jobs:
       #   chromedriver --url-base=/wd/hub &
       - name: Start flask app
         run: |
+          which chromedriver
+          which google-chrome
           $INSTALL_REQUIREMENTS          
           nohup python -m flask run &
         env:
