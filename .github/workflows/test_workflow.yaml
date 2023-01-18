@@ -35,7 +35,7 @@ jobs:
         uses: nanasess/setup-chromedriver@v1
       - run: |
           #chromedriver --url-base=/wd/hub &
-          mv /usr/local/bin/chromedriver /usr/bin/.
+          sudo mv /usr/local/bin/chromedriver /usr/bin/
       - name: Start flask app
         run: |
           echo $PATH
