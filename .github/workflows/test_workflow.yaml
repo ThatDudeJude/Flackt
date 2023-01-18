@@ -43,9 +43,9 @@ jobs:
           FLASK_APP: flackt
           FLASK_ENV: development
           SECRET_KEY: ${{secrets.SECRET_KEY}}
-      # - name: Start XVFB
-      #   run: |
-      #     Xvfb -ac :99 -screen 0 1056x768x32 > /dev/null 2>&1 &
+      - name: Start XVFB
+        run: |
+          Xvfb :99 &
       - name: Run selenium test
         run: |
           sudo apt install firefox-geckodriver
