@@ -39,6 +39,8 @@ jobs:
         run: |
           which chromedriver
           which google-chrome
+          chromedriver --version
+          google-chrome --version
           $INSTALL_REQUIREMENTS          
           nohup python -m flask run &
         env:
