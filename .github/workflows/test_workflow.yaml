@@ -34,7 +34,7 @@ jobs:
       - name: Prepare Selenium
         uses: nanasess/setup-chromedriver@v1
       - run: |
-          chromedriver --url-base=/wd/hub &
+          chromedriver &
       - name: Start flask app
         run: |
           $INSTALL_REQUIREMENTS          
