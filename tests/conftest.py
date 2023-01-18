@@ -336,7 +336,8 @@ def client_ui(request):
     if request.param == "chrome":
         chrome_options = Options()
         chrome_options.binary_location = "/usr/bin/google-chrome" 
-        driver = webdriver.Chrome(options=chrome_options, executable_path="/usr/bin/chromedriver")
+        # driver = webdriver.Chrome(options=chrome_options, executable_path="/usr/bin/chromedriver")
+        driver = webdriver.Chrome()
         display_name = "Test Client Chrome"
         first_channel_name = "Chrome First"
         channel_name_after_login = "Chrome Second"
