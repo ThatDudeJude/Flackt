@@ -33,8 +33,9 @@ jobs:
           python-version: '3.8.5'
       - name: Prepare Selenium
         uses: nanasess/setup-chromedriver@v1
-      #- run: |
+      - run: |
       #   chromedriver --url-base=/wd/hub &
+          mv /usr/local/bin/chromedriver /usr/bin/.
       - name: Start flask app
         run: |
           echo $PATH
