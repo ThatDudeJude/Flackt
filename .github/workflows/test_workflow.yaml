@@ -34,6 +34,7 @@ jobs:
       - name: Prepare Selenium
         uses: nanasess/setup-chromedriver@v1
       - run: |
+          sudo mv /usr/local/bin/chromedriver /usr/bin/
           chromedriver --url-base=/wd/hub &
       - name: Start flask app
         run: |
@@ -51,8 +52,9 @@ jobs:
           sudo apt install firefox-geckodriver
           pip install -e .
           pytest tests/test_ui.py
-          kill -9 $(lsof -i :5000 | awk 'FNR > 1 {print $2}')
         env:
           DISPLAY: :99
           MOZ_HEADLESS: '1'
           SECRET_KEY: ${{secrets.SECRET_KEY}}
+      - name: Kill flask run process
+        run: kill -9 $(lsof -i :5000 | awk 'FNR > 1 {print $2}')

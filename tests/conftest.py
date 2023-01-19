@@ -6,9 +6,7 @@ import pytest
 
 import time
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
@@ -26,13 +24,11 @@ def app():
     instance_in = {"prod": False, "test": True, "dev": False}
     app = create_app(instance_in)
 
-    # with app.app_context():
     yield app
     print("updated", flackt.views.channel_logic.users)
     flackt.views.channel_logic.all_channels_info = {}
     flackt.views.channel_logic.channels = {}
     flackt.views.channel_logic.users = {}
-    # session.pop('current_user')
 
 
 @pytest.fixture(scope="function")
@@ -220,11 +216,7 @@ class ClientInterface:
             create_channel_btn = self.driver.find_element(
                 By.XPATH, "//button[@id='nav-create-channel']"
             )
-            # time.sleep(2.0)
-            # wait = WebDriverWait(self.driver, 8)
-            # create_channel_btn = wait.until(EC.visibility_of_element_located((By.XPATH, "//button[@id='nav-create-channel']")))
-            # print("Hamburger After")
-            # create_channel_btn = self.driver.find_element(By.XPATH, "//button[@id='nav-create-channel']")
+
         finally:
             time.sleep(2.0)
             action = ActionChains(self.driver)
@@ -253,7 +245,7 @@ class ClientInterface:
                 )
             )
             time.sleep(2.0)
-            # channel_selection = driver.find_element(By.XPATH, "//form[@id='select-channel-displayed']/select[1]")
+
             select = Select(channel_selection)
             select.select_by_visible_text(f"{channel_name}")
             if nav_open:
@@ -282,9 +274,6 @@ class ClientInterface:
             time.sleep(2.0)
             action.click(join_channel_btn)
             action.perform()
-
-            # if nav_open:
-            #     self.click_nav()
 
             time.sleep(2.5)
             self.join_channel()
@@ -329,11 +318,7 @@ class ClientInterface:
 def client_ui(request):
     global display_name, first_channel_name, channel_name_after_login, description_button_index
     if request.param == "chrome":
-        chrome_options = Options()
-        chrome_options.binary_location = "/usr/bin/google-chrome"
-        driver = webdriver.Chrome(
-            options=chrome_options, executable_path="/usr/bin/chromedriver"
-        )
+        driver = webdriver.Chrome()
         display_name = "Test Client Chrome"
         first_channel_name = "Chrome First"
         channel_name_after_login = "Chrome Second"
