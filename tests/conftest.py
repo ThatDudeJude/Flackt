@@ -6,6 +6,7 @@ import pytest
 
 import time
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -13,11 +14,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
 
-
-# from socketIO_client import SocketIO, LoggingNamespace
-# import logging
-# logging.getLogger('socketIO-client').setLevel(logging.DEBUG)
-# logging.basicConfig()
 
 display_name = ""
 first_channel_name = ""
@@ -333,7 +329,11 @@ class ClientInterface:
 def client_ui(request):
     global display_name, first_channel_name, channel_name_after_login, description_button_index
     if request.param == "chrome":
-        driver = webdriver.Chrome()
+        chrome_options = Options()
+        chrome_options.binary_location = "/usr/bin/google-chrome"
+        driver = webdriver.Chrome(
+            options=chrome_options, executable_path="/usr/bin/chromedriver"
+        )
         display_name = "Test Client Chrome"
         first_channel_name = "Chrome First"
         channel_name_after_login = "Chrome Second"
