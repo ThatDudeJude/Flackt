@@ -332,4 +332,5 @@ def client_ui(request):
     yield ClientInterface(driver, "http://127.0.0.1:5000/")
     description_button_index += 2
     # driver.close()
+    driver.execute_script("window.localStorage.clear()")
     driver.quit()
