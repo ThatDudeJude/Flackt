@@ -49,6 +49,7 @@ jobs:
           Xvfb :99 &
       - name: Run selenium test
         run: |
+          sudo apt install firefox
           sudo apt install firefox-geckodriver
           pip install -e .
           pytest tests/test_ui.py
