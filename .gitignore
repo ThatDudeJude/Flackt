@@ -16,4 +16,6 @@ nohup.out
 **/fontawesome-free-5.15.4/**
 **/d3-7.3.0/**
 **/js/socket.io.js
+**/js/handlebars-v4.7.7.js**
+**/js/handlebars.runtime.js**
 /flackt.egg-info
