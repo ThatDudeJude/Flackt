@@ -83,7 +83,7 @@ Want to contribute? See contributing guidelines [here](/CONTRIBUTING.md).
 
 ## Codebeat
 
-[![codebeat badge](https://codebeat.co/badges/cddf9361-39e4-4897-bf81-b1640d5f36d8)](https://codebeat.co/a/thatdudejude/projects/github-com-thatdudejude-flackt-main)
+[![codebeat badge](https://codebeat.co/badges/6ce2904d-5fe6-429f-94fa-6bc789e518a6)](https://codebeat.co/projects/github-com-thatdudejude-flackt-main)
 
 ## License
 
