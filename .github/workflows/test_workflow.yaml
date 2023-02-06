@@ -1,0 +1,61 @@
+name: testing
+on: push
+env:
+  INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
+  PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
+
+jobs:
+  unit_tests:
+    runs-on: ubuntu-21.04
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8.5'
+      - name: Run pytest for unit test
+        run: |
+          $INSTALL_REQUIREMENTS         
+          pip install -e . 
+          $PYTEST_RUN
+        env:
+          SECRET_KEY: ${{secrets.SECRET_KEY}}
+
+  e2e_tests:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8.5'
+      - name: Prepare Selenium
+        uses: nanasess/setup-chromedriver@v1
+      - run: |
+          sudo mv /usr/local/bin/chromedriver /usr/bin/
+          chromedriver --url-base=/wd/hub &
+      - name: Start flask app
+        run: |
+          $INSTALL_REQUIREMENTS          
+          nohup python -m flask run &
+        env:
+          FLASK_APP: flackt
+          FLASK_ENV: development
+          SECRET_KEY: ${{secrets.SECRET_KEY}}
+      - name: Start XVFB
+        run: |
+          Xvfb :99 &
+      - name: Run selenium test
+        run: |
+          sudo apt install firefox
+          sudo apt install firefox-geckodriver
+          pip install -e .
+          pytest tests/test_ui.py
+        env:
+          DISPLAY: :99
+          MOZ_HEADLESS: '1'
+          SECRET_KEY: ${{secrets.SECRET_KEY}}
+      - name: Kill flask run process
+        run: kill -9 $(lsof -i :5000 | awk 'FNR > 1 {print $2}')

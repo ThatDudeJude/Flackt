@@ -1,0 +1,221 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand_Book-webfont.svg);
+  src: url(../fonts/Quicksand_Book-webfont.eot);
+  src: url(../fonts/Quicksand_Book-webfont.ttf);
+  src: url(../fonts/Quicksand_Book-webfont.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-family: 'Quicksand', 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+  /* font-weight: 800; */
+}
+
+b {
+  font-weight: 900;
+}
+:root {
+  --primary-color: rgb(43, 1, 32);
+  --secondary-color: rgb(50, 8, 44);
+  --link-color: rgb(31, 9, 9);
+  --nav-link-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+label {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: silver;
+  border-radius: 5px;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: block;
+  width: max-content;
+  padding: 8px 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.1rem;
+  border: 1px var(--primary-color) solid;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #880e4f;
+}
+
+.fs-0 {
+  font-size: 1.15rem;
+  letter-spacing: 0.06rem;
+}
+
+.fs-1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.fs-2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.13rem;
+}
+
+.fs-3 {
+  font-size: 2rem;
+  letter-spacing: 0.16rem;
+}
+
+.fs-4 {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+.my-1 {
+  margin: 10px 0;
+}
+.my-2 {
+  margin: 15px 0;
+}
+.my-3 {
+  margin: 20px 0;
+}
+.my-4 {
+  margin: 30px 0;
+}
+.m-0 {
+  margin: 0;
+}
+.mx-1 {
+  margin: 0 10px;
+}
+.mx-2 {
+  margin: 0 15px;
+}
+.mx-3 {
+  margin: 0 20px;
+}
+.mx-4 {
+  margin: 0 30px;
+}
+.py-0 {
+  padding: 0;
+}
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 15px 0;
+}
+.py-3 {
+  padding: 20px 0;
+}
+.py-4 {
+  padding: 30px 0;
+}
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 15px;
+}
+.p-3 {
+  padding: 20px;
+}
+.p-4 {
+  padding: 30px;
+}
+.h-1 {
+  width: max-content;
+  margin: 30px auto;
+  color: var(--primary-color);
+}
+.h-2 {
+  width: max-content;
+  margin: 20px auto;
+  color: var(--primary-color);
+}
+.h-3 {
+  width: max-content;
+  margin: 15px auto;
+  color: var(--primary-color);
+}
+.h-4 {
+  width: max-content;
+  margin: 10px auto;
+  color: var(--primary-color);
+}
+.primary-bg {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.secondary-bg {
+  background-color: var(--link-color);
+  color: #fff;
+}
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 5fr;
+  width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Forms */
+.form-row {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
