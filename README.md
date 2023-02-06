@@ -16,6 +16,7 @@ All relevant data is stored in global variables defined in the Python backend wh
 | Flask-SocketIO | v5.1.1  | Flask server that allows for real-time bi-directional communication and adds asynchronous functionality to the Flask framework. |
 | Pytest         | v6.2.5  | Python testing library for building and running tests                                                                           |
 | socket.io.js   | v4.4.1  | Javascript Library that facilitates bi-directional communication between the client and the server.                             |
+| d3             | v7.3.0  | Javascript Library utilized in generating SVG graphics                                                                          |
 
 ## Setup and Installation
 
