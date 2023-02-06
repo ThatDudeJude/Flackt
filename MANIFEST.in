@@ -1,5 +1,0 @@
-graft  flackt/templates
-graft flackt/static
-global_exclude *.handlebars
-global_exclude *.pyc
-global_exclude *.code-workspace
