@@ -13,3 +13,5 @@ package.json
 **/__pycache__/
 .env
 nohup.out
+**/fontawesome-free-5.15.4/**
+**/d3-7.3.0/**
