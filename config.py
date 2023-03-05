@@ -8,10 +8,12 @@ class Config(object):
     DEBUG = True
     TESTING = False
     SECRET_KEY = env.str("SECRET_KEY")
+    LOG_WITH_GURNICORN = False
 
 
 class ProductionConfig(Config):
     DEBUG = False
+    LOG_WITH_GURNICORN = True
 
 
 class TestingConfig(Config):
