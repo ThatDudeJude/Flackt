@@ -8,7 +8,7 @@ class Config(object):
     DEBUG = True
     TESTING = False
     SECRET_KEY = env.str("SECRET_KEY")
-    LOG_WITH_GURNICORN = False
+    LOG_WITH_GUNICORN = False
 
 
 class ProductionConfig(Config):
