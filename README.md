@@ -31,7 +31,7 @@ All relevant data is stored in global variables defined in the Python backend wh
 python3 -m pip install -r requirements.txt
 ```
 
-7.  To run the development server, set the environment variables below. Generate a secret key, typing in `python3 -c "import secrets; print(secrets.hex_token());" ` and use the output as the secret key.
+1.  To run the development server, set the environment variables below. Generate a secret key, typing in `python3 -c "import secrets; print(secrets.token_urlsafe());" ` and use the output as the secret key.
 
 ```
     SECRET_KEY=[secret_key]
