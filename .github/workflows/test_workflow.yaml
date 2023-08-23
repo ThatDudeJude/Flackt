@@ -21,7 +21,7 @@ jobs:
           $PYTEST_RUN
         env:
           SECRET_KEY: ${{secrets.SECRET_KEY}}
-
+          
   e2e_tests:
     runs-on: ubuntu-20.04
     steps:
