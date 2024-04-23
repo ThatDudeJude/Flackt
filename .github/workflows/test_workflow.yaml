@@ -3,7 +3,6 @@ on: push
 env:
   INSTALL_REQUIREMENTS: pip3 install -r requirements.txt
   PYTEST_RUN: pytest tests/test_app_instance.py tests/test_authentication.py tests/test_channels.py tests/test_socketio.py
-
 jobs:
   unit_tests:
     runs-on: ubuntu-21.04
@@ -20,8 +19,7 @@ jobs:
           pip install -e . 
           $PYTEST_RUN
         env:
-          SECRET_KEY: ${{secrets.SECRET_KEY}}
-          
+          SECRET_KEY: ${{secrets.SECRET_KEY}}          
   e2e_tests:
     runs-on: ubuntu-20.04
     steps:
