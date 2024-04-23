@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from config import *
+from flackt.config import *
 from flask_socketio import SocketIO
 import os
 import logging
