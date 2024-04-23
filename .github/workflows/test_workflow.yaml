@@ -19,7 +19,7 @@ jobs:
           pip install -e . 
           $PYTEST_RUN
         env:
-          SECRET_KEY: ${{secrets.SECRET_KEY}}          
+          SECRET_KEY: ${{secrets.SECRET_KEY}}
   e2e_tests:
     runs-on: ubuntu-20.04
     steps:
@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: '3.8.5'
       - name: Prepare Selenium
-        uses: nanasess/setup-chromedriver@v1
+        uses: nanasess/setup-chromedriver@v2
       - run: |
           sudo mv /usr/local/bin/chromedriver /usr/bin/
           chromedriver --url-base=/wd/hub &
