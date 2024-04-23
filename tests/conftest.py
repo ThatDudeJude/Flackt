@@ -282,7 +282,7 @@ class ClientInterface:
 
     def join_channel(self, name="Flackt Channel"):
         time.sleep(2.5)
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 15)
         description_btns = wait.until(
             EC.visibility_of_all_elements_located(
                 (By.CSS_SELECTOR, "button.description-btn")
