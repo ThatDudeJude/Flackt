@@ -47,7 +47,7 @@ jobs:
           Xvfb :99 &
       - name: Run selenium test
         run: |
-          sudo apt install firefox=124.0.2+build1-0ubuntu0.20.04.1
+          sudo apt install --allow-downgrades firefox=124.0.2+build1-0ubuntu0.20.04.1
           sudo apt install firefox-geckodriver
           pip install -e .
           pytest tests/test_ui.py
